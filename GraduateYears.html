@@ -1,60 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title> Test Date </title>
-<style> table, th, td {
-  border: 1px solid black; }</style>
-<body>
-
-<h2>Graduating Years</h2>
-
-<p>These are the years when students will graduate.</p>
-
-<p id="currentYearIs"></p>
-
-<p id="table1"></p>
-
-<script>
-let kg, year01, year02, year03, year04, year05, year06, year07, year08, year09, year10, year11, year12, currentYear, test1;
-
-const date1 = new Date();
-currentYear = date1.getFullYear();
-
-
-year12 	= currentYear;
-year11 	= year12 +1;
-year10 	= year11 +1;
-year09 	= year10 +1;
-year08 	= year09 +1;
-year07 	= year08 +1;
-year06 	= year07 +1;
-year05 	= year06 +1;
-year04 	= year05 +1;
-year03 	= year04 +1;
-year02 	= year03 +1;
-year01 	= year02 +1;
-kg		= year01 +1;
-
-let TableGraduate = "<table><tr><th>Class</th><th>Graduating Year</th></tr>" +
-  "<tr><td>KG</td><td> " + kg + "</td></tr>" +
-  "<tr><td>Year 1</td><td> " + year01 + "</td></tr>" +
-  "<tr><td>Year 2</td><td> " + year02 + "</td></tr>" +
-  "<tr><td>Year 3</td><td> " + year03 + "</td></tr>" +
-  "<tr><td>Year 4</td><td> " + year04 + "</td></tr>" +
-  "<tr><td>Year 5</td><td> " + year05 + "</td></tr>" +
-  "<tr><td>Year 6</td><td> " + year06 + "</td></tr>" +
-  "<tr><td>Year 7</td><td> " + year07 + "</td></tr>" +
-  "<tr><td>Year 8</td><td> " + year08 + "</td></tr>" +
-  "<tr><td>Year 9</td><td> " + year09 + "</td></tr>" +
-  "<tr><td>Year 10</td><td> " + year10 + "</td></tr>" +
-  "<tr><td>Year 11</td><td> " + year11 + "</td></tr>" +
-  "<tr><td>Year 12</td><td> " + year12 + "</td></tr>" +
-  "</table>";
- 
-document.getElementById("currentYearIs").innerHTML = "Current year is: " + currentYear + ".";
-document.getElementById("table1").innerHTML = TableGraduate;  
-
-</script>
-
-</body>
+  <head>
+    <title> NGS - Grad Years Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <body>
+    <h1>Graduating Years</h1>
+    <p>these are the years when students will graduate</p>
+    <p id="currentYearIs"></p>
+    <p id="gradTable"></p>
+    <table>
+      <tr><th>Class</th><th>Graduation Year</th></tr>
+      <tr><td>KG</td><td id=kgGradYear></td></tr>
+      <tr><td>Year 1</td><td id=y1GradYear></td></tr>
+      <tr><td>Year 2</td><td id=y2GradYear></td></tr>
+      <tr><td>Year 3</td><td id=y3GradYear></td></tr>
+      <tr><td>Year 4</td><td id=y4GradYear></td></tr>
+      <tr><td>Year 5</td><td id=y5GradYear></td></tr>
+      <tr><td>Year 6</td><td id=y6GradYear></td></tr>
+      <tr><td>Year 7</td><td id=y7GradYear></td></tr>
+      <tr><td>Year 8</td><td id=y8GradYear></td></tr>
+      <tr><td>Year 9</td><td id=y9GradYear></td></tr>
+      <tr><td>Year 10</td><td id=y10GradYear></td></tr>
+      <tr><td>Year 11</td><td id=y11GradYear></td></tr>
+      <tr><td>Year 12</td><td id=y12GradYear></td></tr>
+    </table>
+  </body>
+  <style> 
+    table, th, td { border: 1px solid black; padding: 8px}
+    td:hover { background-color: black; color: white }
+  </style>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+    var currentYear = new Date().getFullYear();
+    var y12 = currentYear;
+    var y11 = y12 + 1;
+    var y10 = y11 + 1;
+    var y9 = y10 + 1;
+    var y8 = y9 + 1;
+    var y7 = y8 + 1;
+    var y6 = y7 + 1;
+    var y5 = y6 + 1;
+    var y4 = y5 + 1;
+    var y3 = y4 + 1;
+    var y2 = y3 + 1;
+    var y1 = y2 + 1;
+    var kg = y1 + 1;
+     
+    document.getElementById("currentYearIs").innerHTML = "the current year is " + currentYear
+    document.getElementById("kgGradYear").innerText = kg;
+    document.getElementById("y1GradYear").innerText = y1;
+    document.getElementById("y2GradYear").innerText = y2;
+    document.getElementById("y3GradYear").innerText = y3;
+    document.getElementById("y4GradYear").innerText = y4;
+    document.getElementById("y5GradYear").innerText = y5;
+    document.getElementById("y6GradYear").innerText = y6;
+    document.getElementById("y7GradYear").innerText = y7;
+    document.getElementById("y8GradYear").innerText = y8;
+    document.getElementById("y9GradYear").innerText = y9;
+    document.getElementById("y10GradYear").innerText = y10;
+    document.getElementById("y11GradYear").innerText = y11;
+    document.getElementById("y12GradYear").innerText = y12;
+  </script>
 </html>
