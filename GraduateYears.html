@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Test Date </title>
+<style> table, th, td {
+  border: 1px solid black; }</style>
+<body>
+
+<h2>Graduating Years</h2>
+
+<p>These are the years when students will graduate.</p>
+
+<p id="currentYearIs"></p>
+
+<p id="table1"></p>
+
+<script>
+let kg, year01, year02, year03, year04, year05, year06, year07, year08, year09, year10, year11, year12, currentYear, test1;
+
+const date1 = new Date();
+currentYear = date1.getFullYear();
+
+
+year12 	= currentYear;
+year11 	= year12 +1;
+year10 	= year11 +1;
+year09 	= year10 +1;
+year08 	= year09 +1;
+year07 	= year08 +1;
+year06 	= year07 +1;
+year05 	= year06 +1;
+year04 	= year05 +1;
+year03 	= year04 +1;
+year02 	= year03 +1;
+year01 	= year02 +1;
+kg		= year01 +1;
+
+let TableGraduate = "<table><tr><th>Class</th><th>Graduating Year</th></tr>" +
+  "<tr><td>KG</td><td> " + kg + "</td></tr>" +
+  "<tr><td>Year 1</td><td> " + year01 + "</td></tr>" +
+  "<tr><td>Year 2</td><td> " + year02 + "</td></tr>" +
+  "<tr><td>Year 3</td><td> " + year03 + "</td></tr>" +
+  "<tr><td>Year 4</td><td> " + year04 + "</td></tr>" +
+  "<tr><td>Year 5</td><td> " + year05 + "</td></tr>" +
+  "<tr><td>Year 6</td><td> " + year06 + "</td></tr>" +
+  "<tr><td>Year 7</td><td> " + year07 + "</td></tr>" +
+  "<tr><td>Year 8</td><td> " + year08 + "</td></tr>" +
+  "<tr><td>Year 9</td><td> " + year09 + "</td></tr>" +
+  "<tr><td>Year 10</td><td> " + year10 + "</td></tr>" +
+  "<tr><td>Year 11</td><td> " + year11 + "</td></tr>" +
+  "<tr><td>Year 12</td><td> " + year12 + "</td></tr>" +
+  "</table>";
+ 
+document.getElementById("currentYearIs").innerHTML = "Current year is: " + currentYear + ".";
+document.getElementById("table1").innerHTML = TableGraduate;  
+
+</script>
+
+</body>
+</html>
