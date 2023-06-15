@@ -1,2 +1,2 @@
-table, th, td { border: 1px solid black; padding: 8px}
-td:hover { background-color: cornflowerblue; color: white }
+table, th, td { border: 1px solid black; padding: 8px; text-align: center; }
+td:hover { background-color: cornflowerblue; color: white; font-weight: 500; }
